@@ -1,0 +1,13 @@
+al ejecutar make object se compila el objeto visibility.o, luego al aplicar nm sobre el objeto, encontramos los siguiente simbolos: 
+
+Los simbolos en minuscula seran funciones locales y los que estan en maysucula sera funciones Globales.
+
+nm visibility.o
+0000000000000000 t add_abs (Variable de texto) 
+000000000000002a T main 
+                 U printf (indefinido)
+0000000000000000 r val1 (Variable de lectura)
+0000000000000004 R val2
+0000000000000000 d val3 (Variable inicial)
+0000000000000004 D val4 
+
